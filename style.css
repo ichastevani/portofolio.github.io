@@ -334,7 +334,6 @@ section .air.air4 {
   animation-iteration-count: infinite;
 }
 
-
 .rounded-photo {
   border-radius: 50%;
   width: 260px;
@@ -344,6 +343,20 @@ section .air.air4 {
   object-fit: cover;
 }
 
+@media (max-width: 768px) {
+  .h1nya {
+      font-size: 24px;
+  }
+  
+  p {
+      font-size: 16px;
+  }
+
+  .rounded-photo {
+      max-width: 80%;
+  }
+}
+/*button*/
 .btn-download {
   display: inline-block;
   padding: 10px 20px;
@@ -410,6 +423,22 @@ section .air.air4 {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .col {
+      display: block;
+      width: 100%;
+  }
+  
+  .biosingkat {
+      text-align: left;
+      margin: 10px 0;
+  }
+  
+  .tengah {
+      text-align: justify;
+      margin: 10px;
+  }
+}
 /*CV*/
 #page {
   min-height: 200px;
@@ -659,6 +688,21 @@ section .air.air4 {
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .skills {
+      padding: 20px 0;
+  }
+
+  .skills .col {
+      flex: 0 0 100%;
+      width: 100%;
+  }
+
+  .skill-icon i {
+      font-size: 30px;
+  }
+}
+
 /*potofolio*/
 .portfolio {
   display: flex;
@@ -672,14 +716,21 @@ section .air.air4 {
 
 /* Tambahkan media query untuk layar yang lebih kecil */
 @media (max-width: 768px) {
-  .portfolio {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
+  .portfolioh2 {
+      margin-top: 100px;
   }
-  
+
   .project {
-    width: 100%; /* Gunakan lebar penuh */
+      flex-basis: 100%;
+  }
+
+  .project img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .project h2 {
+      margin: 10px 0;
   }
 }
 
@@ -836,59 +887,19 @@ section .air.air4 {
   right: 10px;
 }
 
-/*game*/
-.game {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  margin: 20px 0;
-  margin-left: 40px;
-  margin-right: 40px;
-}
+@media (max-width: 768px) {
+  .gallery {
+      padding: 20px 0;
+  }
 
-/* Style untuk container dalam ".game" */
-.game .container {
-  text-align: center;
-  width: calc(33.33% - 20px);
-  height: 240px;
-  margin-bottom: 20px;
-  padding: 10px;
-  background-image: url(img/giftgame.gif);
-  background-size: cover;
-  border-radius: 15px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-}
+  .gallery h1,
+  .gallery h3 {
+      margin: 10px 0;
+  }
 
-/* Style untuk gambar di dalam ".container" */
-.game .container img {
-  max-width: 100%; 
-  height: 120px;
-  object-fit: cover;
-}
-
-/* Style untuk judul h2 di dalam ".container" */
-.game .container h2 {
-  font-size: 18px;
-  margin: 10px 0;
-}
-
-/* Style untuk tombol ".play-button" di dalam ".container" */
-.game .container .play-button {
-  padding: 10px 20px;
-  background-color: #1F4172;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  font-weight: bold;
-  font-size: 16px;
-  text-align: center;
-}
-.game .container .play-button:hover {
- background-color: rgb(64, 60, 60);
+  .slide {
+      flex: 0 0 100%;
+  }
 }
 
 /*Conctact Us*/
@@ -959,6 +970,28 @@ fieldset button[type="submit"] {
 /* Form submit button on hover */
 fieldset button[type="submit"]:hover {
   background-color: #176b87; /* Ubah warna background saat dihover */
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 20px 0;
+  }
+
+  h1 {
+      margin: 10px 0;
+  }
+
+  input,
+  textarea,
+  select {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+  }
+
+  button {
+      padding: 10px 20px;
+  }
 }
 
 /*footer*/
